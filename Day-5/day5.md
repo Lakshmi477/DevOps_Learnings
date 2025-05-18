@@ -29,4 +29,6 @@ They are 3 types of modes
 
 ## ESC Mode
 
-- `u` → Undo the changes  
+- `u` → Undo the changes
+- `gg`→ It will take to top of the file
+- `shift+g`→ Takes to the bottom of the file
