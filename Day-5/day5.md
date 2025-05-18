@@ -1,27 +1,32 @@
-VIM Editor:
+# VIM Editor
 
 They are 3 types of modes  
 1. Esc mode  
 2. Insert mode  
-3. colon :  
+3. Colon `:` mode  
 
-Command mode:  
-vim <filename> -----> Create and open file  
-:q! ----> Exit file without saving  
-:wq! ----> It will save the content that you modifyied and save and exit  
-set hlsearch ----> To hightligh the search word  
-:nohlsearch -----> To remove the highlight  
-:/<searchword> ---> It will search word from TOP  
-:?<searchword> ---> It will search from the bottom  
-:noh -----> no hightlight  
-:set nu ----> It will set the numbers  
-:set nonu ---> It will remove the numbers  
-<line number> d ---> It will delete the line  
-%d ----> It will delete all content in the file  
-<line-numbers>/<searchword>/<replace-word>: It will replace the word first occurence of the line  
-s--> substitute  
-<line-numbers>/<searchword>/<replace-word>/g: It will replace the word from the all occurence of the line  
-<%s>/<searchword>/<replace-word>/g: It will replace the word from the all occurence of the file  
+---
 
-ESC Mode:  
-u -----> undo the changes  
+## Command Mode
+
+- `vim <filename>` → Create and open file  
+- `:q!` → Exit file without saving  
+- `:wq!` → Save the modified content and exit  
+- `:set hlsearch` → Highlight the searched word  
+- `:nohlsearch` → Remove the highlight  
+- `:/<searchword>` → Search word from **top**  
+- `:?<searchword>` → Search word from **bottom**  
+- `:noh` → Remove highlight  
+- `:set nu` → Enable line numbers  
+- `:set nonu` → Disable line numbers  
+- `<line number>d` → Delete a specific line  
+- `%d` → Delete all content in the file  
+- `<line-number>s/<searchword>/<replace-word>/` → Replace first occurrence in the line  
+- `<line-number>s/<searchword>/<replace-word>/g` → Replace all occurrences in the line  
+- `:%s/<searchword>/<replace-word>/g` → Replace all occurrences in the entire file  
+
+---
+
+## ESC Mode
+
+- `u` → Undo the changes  
