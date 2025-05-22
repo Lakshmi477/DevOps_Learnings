@@ -1,63 +1,60 @@
-# Process and Network Management
+# What is a Computer?
 
-This repository contains information on basic process and network management tasks in Linux. It provides commands and their explanations for managing processes, network connections, and useful system tools.
+A computer is a machine that can perform calculations, process data, and store information.
 
-## Process Management
+---
 
-Every task in Linux has a process ID (PID).
+# What is a Server?
 
-### Common Commands:
+A **server** is a system that hosts applications and provides services to other computers (clients) over a network.
 
-- `ps`  
-  To check the process ID.
+---
 
-- `ps -ef`  
-  Shows all currently running process IDs.
+# Client-Server Architecture
 
-  - `-e`: Shows all processes running on the system.
-  - `-f`: Displays the full formatting list.
+**Client-Server Architecture** is a design pattern used in network computing. It contains two main components to interact:
 
-### Key Terms:
+1. **Client**  
+2. **Server**
 
-- **PPID**: Parent process ID. This is the starting point of a process.
-- **PID**: Process ID.
-- **UID**: Owner of the process.
-- **C**: CPU usage.
+---
 
-- `ps -ef | grep <processname>`  
-  Shows the process ID for a particular service name.
+# Common Issues After Hitting a URL in the Browser
 
-### Types of Processes:
+If there is any issue after accessing something in a browser, it could be due to:
 
-1. **Foreground Processes**:  
-   - These processes run directly on the terminal.
-   - You can see the output in the terminal and it blocks your terminal until it finishes.
-   - You must wait for it to finish before running the next command.
+1. **Network Application Issues**  
+2. **Application Issues**
 
-2. **Background Processes**:  
-   - Multiple applications can run in the background.
-   - If any process blocks you, you can kill it using the process ID.
+---
 
-   Command to kill a process:
-   ```bash
-   kill <PID>
-dnf install htop
-Network Management
-netstat -lntp
-Displays open ports in Linux.
+# How to Connect to a Server
 
--l: List only listening sockets.
+### Required Components:
+- **Protocols**: `http` / `https`
+- **Ports**: `80` / `443`
+- **IP Address**: DNS or IP Address
+- **Username**: Required for login
+- **Password**: Required for authentication
 
--n: Show numerical port numbers.
+---
 
--t: Show TCP connections (e.g., ssh, http, https).
+# SSH (Secure Shell)
 
--p: Display the process ID using the port.
-Key Terms:
-l: List
+- **SSH**: Secure Shell, used to securely connect to remote servers.
+- **Default Port**: `22`
+- Linux servers typically work over SSH.
 
-n: Port number
+---
 
-t: TCP (ports like SSH, HTTP, HTTPS)
+# Types of Network Traffic
 
-p: Process ID
+1. **Inbound Traffic** – Incoming traffic to a server.
+2. **Outbound Traffic** – Outgoing traffic from a server.
+
+---
+
+# Types of Keys
+
+1. **Private Key** – Used to authenticate and decrypt data.
+2. **Public Key** – Shared with others to encrypt data.
